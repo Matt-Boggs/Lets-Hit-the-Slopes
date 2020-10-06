@@ -56,11 +56,25 @@ $(document).ready(function () {
 
     // BASE SNOW STATS
 
+    var baseSnow = (response.forecast[0].base.freshsnow_in)
+    var baseWind = (response.forecast[0].base.windspd_mph)
+    var baseTemp = (response.forecast[0].base.temp_f)
+    var baseFeel= (response.forecast[0].base.feelslike_f)
+    var baseVis= (response.forecast[0].base.wx_desc)
+
+
     console.log(response.forecast[0].base.freshsnow_in)
     console.log(response.forecast[0].base.windspd_mph)
     console.log(response.forecast[0].base.temp_f)
     console.log(response.forecast[0].base.feelslike_f)
     console.log(response.forecast[0].base.wx_desc)
+
+    $("#snow").append(baseSnow + " inches")
+    $("#wind").append(baseWind + " MPH")
+    $("#temp").append(baseTemp + " Fahrenheit")
+    $("#feels-like").append(baseFeel + " Fahrenheit")
+    $("#visibility").append(baseVis)
+
 
     // PEAK SNOW STATS
 
@@ -69,6 +83,22 @@ $(document).ready(function () {
     console.log(response.forecast[0].upper.temp_f)
     console.log(response.forecast[0].upper.feelslike_f)
     console.log(response.forecast[0].upper.wx_desc)
+
+    var peakSnow = (response.forecast[0].upper.freshsnow_in)
+    var peakWind = (response.forecast[0].upper.windspd_mph)
+    var peakTemp = (response.forecast[0].upper.temp_f)
+    var peakFeel= (response.forecast[0].upper.feelslike_f)
+    var peakVis= (response.forecast[0].upper.wx_desc)
+
+
+
+    $("#snow-peak").append(peakSnow + " inches")
+    $("#wind-peak").append(peakWind + " MPH")
+    $("#temp-peak").append(peakTemp + " Fahrenheit")
+    $("#feels-like-peak").append(peakFeel + " Fahrenheit")
+    $("#visibility-peak").append(peakVis)
+
+
 
 
   });
