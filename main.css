@@ -9,3 +9,19 @@
   clear: both;
   display: table;
 }
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {background: #eee;}
+
+img {
+  width: 450px;
+  length: 450px;
+}
