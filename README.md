@@ -1,4 +1,11 @@
 # Lets-Hit-the-Slopes
+## Terminal directions:
+-git checkout main (this is to get into the main branch)
+-git status
+-git pull
+-git checkout -b yournewbranchname
+-git status
+-git commit -m "message"
 
 ## Group Assignment #1
 ### Group Members 
