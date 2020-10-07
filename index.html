@@ -41,7 +41,7 @@
 
 </div>
 <div class="row info">
-  <div class="col-md-6 offset-3">
+  <div class="col-md-3 offset-2">
     <h2 class="base-conditions"> Base Conditions </h2>
     <ul>
       <li id="snow">Fresh Snow: </li>
@@ -51,8 +51,37 @@
       <li id="visibility">Visibility: </li>
     </ul>
   </div>
-</div>
-<div class="col-md-6 offset-3">
+    <div class="col-md-4 offset-1">
+      <form class="conversion">
+        <h2 id="buy-pass"> Buy a Pass: </h2>
+        <p id="money-type"> Please select your currency: </p>
+        <select>
+          <option id="usd"> USD </option>
+          <option id="cad"> CAD </option>
+          <option id="gpb"> GBP </option>
+          <option id="eur"> EUR </option>
+          <option id="hkg"> HKG </option>
+          <option id="aud"> AUD </option>
+          <option id="jpy"> JPY </option>
+        </select>
+        <p id="stay-length"> Enter the amount of days for your pass: </p>
+        <input type="number" placeholder="1, 2, 3, 4, 5, etc">
+        <p id="pass-type"> Please select the pass you would like to purchase: </p>
+        <select>
+          <option id=""> Pass </option>
+          <option id=""> Pass </option>
+          <option id=""> Pass </option>
+          <option id=""> Pass </option>
+        </select>   
+      </form>
+        <form id="text-form">
+          <p> This is how much your pass will cost: </p>
+          <div id="output">  </div>
+        </form>
+      </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3 offset-2">
   <h2 class="peak-conditions"> Peak Conditions </h2>
   <ul>
     <li id="snow-peak">Fresh Snow: </li>
@@ -61,7 +90,9 @@
     <li id="feels-like-peak">Feels Like: </li>
     <li id="visibility-peak">Visibility: </li>
   </ul>
+ </div>
 </div>
+ 
 
 
   
