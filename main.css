@@ -21,11 +21,30 @@
 
 .btn:hover {background: #eee;}
 
-img {
-  width: 450px;
-  length: 450px;
+body {
+  background-image: url("paper.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 
 li {
   color: white;
 }
+
+.footer {
+  width: 100vw;
+  display: block;
+  overflow: hidden;
+  padding: 30px 0;
+  box-sizing: border-box;
+  background-color: rgb(131, 156, 156);
+  position: absolute;
+  bottom: 0;
+}
+
+.inner-footer {
+  display: block;
+  margin: 0 auto;
+  width: 1100px;
+  height: 100%;
