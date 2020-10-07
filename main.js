@@ -91,7 +91,6 @@ $(document).ready(function () {
     var peakVis= (response.forecast[0].upper.wx_desc)
 
 
-
     $("#snow-peak").append(peakSnow + " inches")
     $("#wind-peak").append(peakWind + " MPH")
     $("#temp-peak").append(peakTemp + " Fahrenheit")
