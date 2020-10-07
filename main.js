@@ -126,6 +126,7 @@ $(document).ready(function () {
 $.ajax(settings).done(function (money) {
   console.log(money);
   console.log(money.vl);
+
 });
 
 
