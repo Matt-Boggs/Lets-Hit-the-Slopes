@@ -107,6 +107,10 @@ $(document).ready(function () {
   var from = "EUR";
   var to = "USD";
   var amount = "10";
+  var userMoney = $("select").val()
+  console.log(userMoney)
+
+
   var settings = {
 	"async": true,
 	"crossDomain": true,
@@ -118,8 +122,11 @@ $(document).ready(function () {
 	}
 }
 
-$.ajax(settings).done(function (response) {
-	console.log(response);
+
+$.ajax(settings).done(function (money) {
+  console.log(money);
+  console.log(money.vl);
+
 });
 
 
