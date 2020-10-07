@@ -104,7 +104,23 @@ $(document).ready(function () {
   });
 
 
+  var from = "EUR";
+  var to = "USD";
+  var amount = "10";
+  var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://currency26.p.rapidapi.com/convert/" + from + "/" + to + "/" + amount,
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "currency26.p.rapidapi.com",
+		"x-rapidapi-key": "a32a78eeadmsh2e228973a5b48fbp189947jsn7abd11e355ff"
+	}
+}
 
+$.ajax(settings).done(function (response) {
+	console.log(response);
+});
 
 
 })
