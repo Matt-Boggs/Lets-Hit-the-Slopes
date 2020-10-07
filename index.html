@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./main.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./main.css" />
 </head>
 
 <body>
   <style>
     body {
-      background-image: url('https://c.stocksy.com/a/x0q400/z9/1153259.jpg')
+      background-image: url('https://pila.it/wp-content/uploads/2017/09/maestro-in-azione-2.jpg')
     }
   </style>
 
@@ -24,8 +24,8 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link active" href="./index.html">Main<span class="sr-only">(current)</span></a>
-        <a class="nav-link" href="./epic.html">EPIC</a>
-        <a class="nav-link" href="./icon.html">IKON</a>
+        <a class="nav-link" href="./epic.html">Placeholder</a>
+        <a class="nav-link" href="./Credits.html">Credits</a>
       </div>
     </div>
   </nav>
@@ -36,12 +36,12 @@
 
   </div>
     
-  <p class="text-center"><div class="shadow p-3 mb-5 bg-white rounded">Please Click on the Ski Pass you have and you will be directed to the weather information for ski Resort of your choosing. Have FUN! </div></p>
+  <p class="text-center"><div class="shadow p-3 mb-5 bg-white rounded"> Welcome to Pila Snowland Ski Resort Information Center! </div></p>
 
 
 </div>
 <div class="row info">
-  <div class="col-md-6 offset-3">
+  <div class="col-md-3 offset-2">
     <h2 class="base-conditions"> Base Conditions </h2>
     <ul>
       <li id="snow">Fresh Snow: </li>
@@ -51,8 +51,37 @@
       <li id="visibility">Visibility: </li>
     </ul>
   </div>
-</div>
-<div class="col-md-6 offset-3">
+    <div class="col-md-4 offset-1">
+      <form class="conversion">
+        <h2 id="buy-pass"> Buy a Pass: </h2>
+        <p id="money-type"> Please select your currency: </p>
+        <select>
+          <option id="usd"> USD </option>
+          <option id="cad"> CAD </option>
+          <option id="gpb"> GBP </option>
+          <option id="eur"> EUR </option>
+          <option id="hkg"> HKG </option>
+          <option id="aud"> AUD </option>
+          <option id="jpy"> JPY </option>
+        </select>
+        <p id="stay-length"> Enter the amount of days for your pass: </p>
+        <input type="number" placeholder="1, 2, 3, 4, 5, etc">
+        <p id="pass-type"> Please select the pass you would like to purchase: </p>
+        <select>
+          <option id=""> Pass </option>
+          <option id=""> Pass </option>
+          <option id=""> Pass </option>
+          <option id=""> Pass </option>
+        </select>   
+      </form>
+        <form id="text-form">
+          <p> This is how much your pass will cost: </p>
+          <div id="output">  </div>
+        </form>
+      </div>
+  </div>
+  <div class="row">
+  <div class="col-md-3 offset-2">
   <h2 class="peak-conditions"> Peak Conditions </h2>
   <ul>
     <li id="snow-peak">Fresh Snow: </li>
@@ -61,9 +90,27 @@
     <li id="feels-like-peak">Feels Like: </li>
     <li id="visibility-peak">Visibility: </li>
   </ul>
+ </div>
+</div>
+ 
+<div class="container">
+  <div class="row align-items-start">
+    <div class="col">
+      <img src="assets/Pila-map.jpg" id="pila">
+      <button class="btn">Check out Pila Resort!</button>
+     
+    </div>
+  </div>
+  
 </div>
 
 
+
+
+<div class="footer">
+  <div id="inner-footer">
+    </div>
+    </div>
   
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="main.js"></script>
