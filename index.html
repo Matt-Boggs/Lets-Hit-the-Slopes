@@ -55,7 +55,7 @@
       <form class="conversion">
         <h2 id="buy-pass"> Buy a Pass: </h2>
         <p id="money-type"> Please select your currency: </p>
-        <select>
+        <select id="currency">
           <option id="usd"> USD </option>
           <option id="cad"> CAD </option>
           <option id="gpb"> GBP </option>
@@ -65,14 +65,17 @@
           <option id="jpy"> JPY </option>
         </select>
         <p id="stay-length"> Enter the amount of days for your pass: </p>
-        <input type="number" placeholder="1, 2, 3, 4, 5, etc">
+        <input type="text" class = "days" placeholder="1, 2, 3, 4, 5, etc">
         <p id="pass-type"> Please select the pass you would like to purchase: </p>
-        <select>
-          <option id=""> Pass </option>
-          <option id=""> Pass </option>
-          <option id=""> Pass </option>
-          <option id=""> Pass </option>
-        </select>   
+        <select id="passes">
+          <option id="adult"> Adult </option>
+          <option id="jr"> Junior/Senior </option>
+          <option id="uni"> University </option>
+          
+        </select> 
+          <br>
+          <br>
+          <button type="button" id="submit"> Submit </button>
       </form>
         <form id="text-form">
           <p> This is how much your pass will cost: </p>

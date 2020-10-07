@@ -15,11 +15,11 @@
 //aspen
 //durango
 
-// Pseudo-coding to begin 
+// Pseudo-coding to begin
 
-//2 function, 
+//2 function,
 // 1 for resort
-// 1 for weather conditions 
+// 1 for weather conditions
 
 //variables to create from API
 //resorts
@@ -44,92 +44,103 @@
 // wind speed
 // wind gust
 
-
 $(document).ready(function () {
-
-  var currWeatherPila = "https://api.weatherunlocked.com/api/resortforecast/666020?app_id=8ef92fdb&app_key=f1a993da508ddcdd9c8459ab494bbc83"
+  var currWeatherPila =
+    "https://api.weatherunlocked.com/api/resortforecast/666020?app_id=8ef92fdb&app_key=f1a993da508ddcdd9c8459ab494bbc83";
   $.ajax({
     url: currWeatherPila,
-    method: "GET"
+    method: "GET",
   }).then(function (response) {
-    console.log(response)
+    console.log(response);
 
     // BASE SNOW STATS
 
-    var baseSnow = (response.forecast[0].base.freshsnow_in)
-    var baseWind = (response.forecast[0].base.windspd_mph)
-    var baseTemp = (response.forecast[0].base.temp_f)
-    var baseFeel= (response.forecast[0].base.feelslike_f)
-    var baseVis= (response.forecast[0].base.wx_desc)
+    var baseSnow = response.forecast[0].base.freshsnow_in;
+    var baseWind = response.forecast[0].base.windspd_mph;
+    var baseTemp = response.forecast[0].base.temp_f;
+    var baseFeel = response.forecast[0].base.feelslike_f;
+    var baseVis = response.forecast[0].base.wx_desc;
 
+    console.log(response.forecast[0].base.freshsnow_in);
+    console.log(response.forecast[0].base.windspd_mph);
+    console.log(response.forecast[0].base.temp_f);
+    console.log(response.forecast[0].base.feelslike_f);
+    console.log(response.forecast[0].base.wx_desc);
 
-    console.log(response.forecast[0].base.freshsnow_in)
-    console.log(response.forecast[0].base.windspd_mph)
-    console.log(response.forecast[0].base.temp_f)
-    console.log(response.forecast[0].base.feelslike_f)
-    console.log(response.forecast[0].base.wx_desc)
-
-    $("#snow").append(baseSnow + " inches")
-    $("#wind").append(baseWind + " MPH")
-    $("#temp").append(baseTemp + " Fahrenheit")
-    $("#feels-like").append(baseFeel + " Fahrenheit")
-    $("#visibility").append(baseVis)
-
+    $("#snow").append(baseSnow + " inches");
+    $("#wind").append(baseWind + " MPH");
+    $("#temp").append(baseTemp + " Fahrenheit");
+    $("#feels-like").append(baseFeel + " Fahrenheit");
+    $("#visibility").append(baseVis);
 
     // PEAK SNOW STATS
 
-    console.log(response.forecast[0].upper.freshsnow_in)
-    console.log(response.forecast[0].upper.windspd_mph)
-    console.log(response.forecast[0].upper.temp_f)
-    console.log(response.forecast[0].upper.feelslike_f)
-    console.log(response.forecast[0].upper.wx_desc)
+    console.log(response.forecast[0].upper.freshsnow_in);
+    console.log(response.forecast[0].upper.windspd_mph);
+    console.log(response.forecast[0].upper.temp_f);
+    console.log(response.forecast[0].upper.feelslike_f);
+    console.log(response.forecast[0].upper.wx_desc);
 
-    var peakSnow = (response.forecast[0].upper.freshsnow_in)
-    var peakWind = (response.forecast[0].upper.windspd_mph)
-    var peakTemp = (response.forecast[0].upper.temp_f)
-    var peakFeel= (response.forecast[0].upper.feelslike_f)
-    var peakVis= (response.forecast[0].upper.wx_desc)
+    var peakSnow = response.forecast[0].upper.freshsnow_in;
+    var peakWind = response.forecast[0].upper.windspd_mph;
+    var peakTemp = response.forecast[0].upper.temp_f;
+    var peakFeel = response.forecast[0].upper.feelslike_f;
+    var peakVis = response.forecast[0].upper.wx_desc;
 
-
-
-    $("#snow-peak").append(peakSnow + " inches")
-    $("#wind-peak").append(peakWind + " MPH")
-    $("#temp-peak").append(peakTemp + " Fahrenheit")
-    $("#feels-like-peak").append(peakFeel + " Fahrenheit")
-    $("#visibility-peak").append(peakVis)
-
-
-
-
+    $("#snow-peak").append(peakSnow + " inches");
+    $("#wind-peak").append(peakWind + " MPH");
+    $("#temp-peak").append(peakTemp + " Fahrenheit");
+    $("#feels-like-peak").append(peakFeel + " Fahrenheit");
+    $("#visibility-peak").append(peakVis);
   });
 
+  // adult 46 EUR
+  // jr 41 EUR
+  // uni 43 EUR
+  $("#submit").on("click", function () {
+    var to = "";
+    var amount = "";
+    var settings = {
+      async: true,
+      crossDomain: true,
+      url:
+        "https://currency26.p.rapidapi.com/convert/" +
+        "EUR" +
+        "/" +
+        to +
+        "/" +
+        amount,
+      method: "GET",
+      headers: {
+        "x-rapidapi-host": "currency26.p.rapidapi.com",
+        "x-rapidapi-key": "a32a78eeadmsh2e228973a5b48fbp189947jsn7abd11e355ff",
+      },
+    };
 
-  var from = "EUR";
-  var to = "USD";
-  var amount = "10";
-  var userMoney = $("select").val()
-  console.log(userMoney)
+    $.ajax(settings).done(function (response) {
+      from = "EUR";
+      var to = $("#currency").val();
+      var amount = price * vl;
+      console.log(amount);
 
+      console.log(response);
+      var price = $("#output");
+      to = $("#currency").val();
+      var days = $(".days").val();
+      var dayInt = parseInt(days);
+      var passtype = $("#passes").val();
+      var vl = response.vl;
 
-  var settings = {
-	"async": true,
-	"crossDomain": true,
-	"url": "https://currency26.p.rapidapi.com/convert/" + from + "/" + to + "/" + amount,
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "currency26.p.rapidapi.com",
-		"x-rapidapi-key": "a32a78eeadmsh2e228973a5b48fbp189947jsn7abd11e355ff"
-	}
-}
-
-
-$.ajax(settings).done(function (money) {
-  console.log(money);
-  console.log(money.vl);
-
+      if (passtype === "Adult") {
+        price = dayInt * 46;
+        console.log(price);
+      } else if (passtype === "Junior/Senior") {
+        price = dayInt * 41;
+        console.log(price);
+      } else if (passtype === "University") {
+        price = dayInt * 43;
+        console.log(price);
+      }
+    });
+  });
 });
-
-
-})
-
-
