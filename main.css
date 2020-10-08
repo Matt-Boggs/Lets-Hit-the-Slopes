@@ -142,12 +142,14 @@ h4 {
   margin: auto;
 }
 
-.map {
-  text-align: center;
+#google-map {
   margin-top: 100px;
+  padding-bottom: 20px;
+  padding-left: 50px;
 }
 
 #pila-runs {
-  width: 600px;
+  width: 650px;
   height: 450px;
+  padding-left: 50px;
 }
