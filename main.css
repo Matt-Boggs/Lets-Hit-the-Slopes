@@ -210,6 +210,24 @@ h2 {
 
 #animateSki {
   height: 50px; width: 50px;
+  
   position: absolute;
-  right: 0px;
+}
+#animateSki {
+  height: 50px; width: 50px;
+  position: absolute;
+  left: 48%;
+  bottom: 5px;
+
+  -webkit-animation: linear infinite alternate;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 5s;
+}
+@-webkit-keyframes run {
+  0% {
+  }
+  100% {
+    
+    -webkit-transform: scaleX(-1);
+  }
 }
