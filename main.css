@@ -87,6 +87,8 @@ h1 {
   font-size: 16px;
 }
 
+
+
 .footer {
   width: 100vw;
   display: block;
@@ -94,7 +96,7 @@ h1 {
   padding: 30px 0;
   box-sizing: border-box;
   background-color: rgb(131, 156, 156);
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 
