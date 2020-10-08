@@ -98,49 +98,45 @@ $(document).ready(function () {
   // jr 41 EUR
   // uni 43 EUR
   $("#submit").on("click", function () {
-    var to = "";
-    var amount = "";
+
+    var baseCurrency = $("#currency").val()
+
     var settings = {
-      async: true,
-      crossDomain: true,
-      url:
-        "https://currency26.p.rapidapi.com/convert/" +
-        "EUR" +
-        "/" +
-        to +
-        "/" +
-        amount,
-      method: "GET",
-      headers: {
+      "async": true,
+      "crossDomain": true,
+      "url": "https://currency26.p.rapidapi.com/convert/EUR/" + baseCurrency + "/1",
+      "method": "GET",
+      "headers": {
         "x-rapidapi-host": "currency26.p.rapidapi.com",
-        "x-rapidapi-key": "a32a78eeadmsh2e228973a5b48fbp189947jsn7abd11e355ff",
-      },
-    };
+        "x-rapidapi-key": "a32a78eeadmsh2e228973a5b48fbp189947jsn7abd11e355ff"
+      }
+    }
 
-    $.ajax(settings).done(function (response) {
-      from = "EUR";
-      var to = $("#currency").val();
-      var amount = price * vl;
-      console.log(amount);
-
-      console.log(response);
-      var price = $("#output");
-      to = $("#currency").val();
-      var days = $(".days").val();
-      var dayInt = parseInt(days);
+    $.ajax(settings).done(function (responseCurr) {
+      console.log(responseCurr);
+      var totDays = $(".days").val()
       var passtype = $("#passes").val();
-      var vl = response.vl;
+      var totInt = parseInt(totDays)
+      console.log(passtype);
+      var vl = responseCurr.vl;
 
       if (passtype === "Adult") {
-        price = dayInt * 46;
+        price = totInt * 46;
         console.log(price);
       } else if (passtype === "Junior/Senior") {
-        price = dayInt * 41;
+        price = totInt * 41;
         console.log(price);
       } else if (passtype === "University") {
-        price = dayInt * 43;
+        price = totInt * 43;
         console.log(price);
       }
+      var final = vl * price
+      var finalFixed = final.toFixed(2)
+      console.log(finalFixed);
+
+      $("#output").append(finalFixed);
+
     });
-  });
+  })
 });
+
