@@ -107,8 +107,16 @@ h1 {
 }
 
 .base-conditions {
-  padding-left: 10px;
+  padding-right: 300px;
   padding-bottom: 10px;
+}
+
+.peak-conditions {
+  padding-right: 300px
+}
+
+#buy-pass {
+  padding-right: 1000px;
 }
 
 .footer {
@@ -152,8 +160,6 @@ h4 {
   
  max-width: 95%;
   height: auto;
-  
-  
   padding: 10px;
  
  
