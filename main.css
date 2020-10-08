@@ -143,20 +143,32 @@ h4 {
 }
 
 #google-map {
+  max-width: 95%;
+  height: auto;
   margin-top: 100px;
+  padding-left: 10px;
  
 }
-
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:400px;
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  max-width:43%;
+  position:absolute;
+  padding-left: 10px;
+}
 
 #runs_image{
-  
  max-width: 95%;
   height: auto;
-  
-  
   padding: 10px;
- 
- 
+
 }
 
 h2 {
@@ -171,11 +183,6 @@ h2 {
   padding-left: 50px;
 }
 
-#pila-runs {
-  width: 650px;
-  height: 450px;
-  padding-left: 50px;
-}
 
 .ski-list{
   color: black;
