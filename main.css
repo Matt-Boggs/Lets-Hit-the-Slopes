@@ -78,6 +78,7 @@ h1 {
 .col-6 {
   opacity: .75;
   margin-bottom: 5px;
+  padding-left: 20px;
   
 }
 .card > p {
@@ -114,4 +115,8 @@ h4 {
   font-size: 24px;
   color: black;
   text-align: center;
+}
+
+.container-fluid {
+  margin: auto;
 }
