@@ -120,3 +120,8 @@ h4 {
 .container-fluid {
   margin: auto;
 }
+
+.map {
+  text-align: center;
+  margin-top: 100px;
+}
