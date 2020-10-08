@@ -111,7 +111,6 @@ $(document).ready(function () {
         "x-rapidapi-key": "a32a78eeadmsh2e228973a5b48fbp189947jsn7abd11e355ff"
       }
     }
-
     $.ajax(settings).done(function (responseCurr) {
       console.log(responseCurr);
       var totDays = $(".days").val()
