@@ -1,11 +1,4 @@
 # Lets-Hit-the-Slopes
-## Terminal directions:
--git checkout main (this is to get into the main branch)
--git status
--git pull
--git checkout -b yournewbranchname
--git status
--git commit -m "message"
 
 ## Group Assignment #1
 ### Group Members 
@@ -28,8 +21,20 @@ Github: https://github.com/MarkBrazee
 Email: matt.david.boggs@gmail.com
 Github: https://github.com/Matt-Boggs
 
-## Concept:
 
+## In Use:
+
+Images go here
+
+## Concept:
+Our goal in developing this app was to be able to check on ski resort conditions at a certain location. Due to API use constraints, this ski resort is in Pila, Italy. The Home page gives you current base and peak conditions at the Pila resort, as well as a tool to convert pass prices to the users chosen currency. As well, there is a thumbnail of the pila ski resort map, that takes you to a seperate map page, with some information about the resort, i.e. run locations, and information on how to use the interactive map, etc.
+
+In addition, we have a credits page with some info on the team members that were instrumental to this project's success
+
+## Challenges:
+Our first challenge as a team was to learn the process of branching on github, pushing those changes up, and then finally merging them to the main branch. Throughout this process, we experienced some of the errors that can come about with branching and merging, and overcame them as a team.
+
+Our second challenge was in using some of the API's we decided on. We saw how documentation between API's can vary in User-Friendliness, as well as a couple different ways to call on an API in our code. These issues, as well, we were able to push through with teamwork, communication, and occasionally moral support.
 
 
 
