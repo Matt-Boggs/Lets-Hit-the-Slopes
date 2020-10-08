@@ -63,9 +63,7 @@ $(document).ready(function () {
     $("#visibility-peak").append(peakVis);
   });
 
-  // adult 46 EUR
-  // jr 41 EUR
-  // uni 43 EUR
+ 
   $("#submit").on("click", function () {
 
     var baseCurrency = $("#currency").val()
@@ -101,7 +99,7 @@ $(document).ready(function () {
       var final = vl * price
       var finalFixed = final.toFixed(2)
 
-      $("#output").append(finalFixed);
+      $("#output").text(finalFixed);
     });
   })
 });
