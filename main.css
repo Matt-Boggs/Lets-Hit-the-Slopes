@@ -78,6 +78,7 @@ h1 {
 .col-6 {
   opacity: .75;
   margin-bottom: 5px;
+  padding-left: 20px;
   
 }
 .card > p {
