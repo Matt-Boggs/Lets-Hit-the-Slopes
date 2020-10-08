@@ -1,20 +1,3 @@
-// 1 epic js
-//vail
-//breckenridge
-//beaver creek
-//keystone
-//crested butte
-//telluride
-//snowmass
-
-//1 icon js
-//steamboat
-//winter park
-//copper mountain
-//summit county
-//aspen
-//durango
-
 // Pseudo-coding to begin
 
 //2 function,
@@ -51,8 +34,6 @@ $(document).ready(function () {
     url: currWeatherPila,
     method: "GET",
   }).then(function (response) {
-    console.log(response);
-
     // BASE SNOW STATS
 
     var baseSnow = response.forecast[0].base.freshsnow_in;
@@ -61,12 +42,6 @@ $(document).ready(function () {
     var baseFeel = response.forecast[0].base.feelslike_f;
     var baseVis = response.forecast[0].base.wx_desc;
 
-    console.log(response.forecast[0].base.freshsnow_in);
-    console.log(response.forecast[0].base.windspd_mph);
-    console.log(response.forecast[0].base.temp_f);
-    console.log(response.forecast[0].base.feelslike_f);
-    console.log(response.forecast[0].base.wx_desc);
-
     $("#snow").append(baseSnow + " inches");
     $("#wind").append(baseWind + " MPH");
     $("#temp").append(baseTemp + " Fahrenheit");
@@ -74,12 +49,6 @@ $(document).ready(function () {
     $("#visibility").append(baseVis);
 
     // PEAK SNOW STATS
-
-    console.log(response.forecast[0].upper.freshsnow_in);
-    console.log(response.forecast[0].upper.windspd_mph);
-    console.log(response.forecast[0].upper.temp_f);
-    console.log(response.forecast[0].upper.feelslike_f);
-    console.log(response.forecast[0].upper.wx_desc);
 
     var peakSnow = response.forecast[0].upper.freshsnow_in;
     var peakWind = response.forecast[0].upper.windspd_mph;
@@ -94,9 +63,7 @@ $(document).ready(function () {
     $("#visibility-peak").append(peakVis);
   });
 
-  // adult 46 EUR
-  // jr 41 EUR
-  // uni 43 EUR
+ 
   $("#submit").on("click", function () {
 
     var baseCurrency = $("#currency").val()
@@ -111,11 +78,11 @@ $(document).ready(function () {
         "x-rapidapi-key": "a32a78eeadmsh2e228973a5b48fbp189947jsn7abd11e355ff"
       }
     }
+
     $.ajax(settings).done(function (responseCurr) {
-      console.log(responseCurr);
-      var totDays = $(".days").val()
+      var totDays = $(".days").val();
       var passtype = $("#passes").val();
-      var totInt = parseInt(totDays)
+      var totInt = parseInt(totDays);
       console.log(passtype);
       var vl = responseCurr.vl;
 
@@ -131,11 +98,29 @@ $(document).ready(function () {
       }
       var final = vl * price
       var finalFixed = final.toFixed(2)
-      console.log(finalFixed);
 
-      $("#output").append(finalFixed);
-
+      $("#output").text(finalFixed);
     });
   })
 });
+
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+// Grid View
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
+}
 

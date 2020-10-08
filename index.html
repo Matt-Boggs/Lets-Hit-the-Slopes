@@ -4,7 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+  crossorigin="anonymous"
+/>
   <link rel="stylesheet" href="./main.css" />
 </head>
 
@@ -36,7 +41,7 @@
 
 </div>
 <div class="row info">
-  <div class="col-md-3 offset-2">
+  <div class="row, col">
     <h2 class="base-conditions"> Base Conditions </h2>
     <ul>
       <li id="snow">Fresh Snow: </li>
@@ -46,7 +51,22 @@
       <li id="visibility">Visibility: </li>
     </ul>
   </div>
-    <div class="col-md-4 offset-1">
+
+    <div class="col">
+    <h2 class="peak-conditions"> Peak Conditions </h2>
+    <ul>
+      <li id="snow-peak">Fresh Snow: </li>
+      <li id="wind-peak">Wind Speed: </li>
+      <li id="temp-peak">Temperature: </li>
+      <li id="feels-like-peak">Feels Like: </li>
+      <li id="visibility-peak">Visibility: </li>
+    </ul>
+   </div>
+  </div>
+
+
+
+    <div class="col">
       <form class="conversion">
         <h2 id="buy-pass"> Buy a Pass: </h2>
         <p id="money-type"> Please select your currency: </p>
@@ -78,28 +98,21 @@
         </form>
       </div>
   </div>
-  <div class="row">
-  <div class="col-md-3 offset-2">
-  <h2 class="peak-conditions"> Peak Conditions </h2>
-  <ul>
-    <li id="snow-peak">Fresh Snow: </li>
-    <li id="wind-peak">Wind Speed: </li>
-    <li id="temp-peak">Temperature: </li>
-    <li id="feels-like-peak">Feels Like: </li>
-    <li id="visibility-peak">Visibility: </li>
-  </ul>
- </div>
 </div>
- 
-<div class="container">
+</div>
+
+
+
+
+ <div class = "row">
+<div class="col, container">
   <div class="row align-items-start">
     <div class="col">
       <img src="assets/Pila-map.jpg" id="pila">
       <button class="btn">Check out Pila Resort!</button>
-     
-    </div>
   </div>
-  
+    </div>
+</div>
 </div>
 
 
@@ -112,5 +125,20 @@
   
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="main.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+  crossorigin="anonymous"
+></script>
 </body>
 
