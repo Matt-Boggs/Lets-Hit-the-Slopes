@@ -124,9 +124,27 @@ h4 {
 .map {
   text-align: center;
   margin-top: 100px;
+ 
 }
 
-#pila-runs {
-  width: 600px;
-  height: 450px;
+
+#runs_image{
+  
+ max-width: 95%;
+  height: auto;
+  
+  
+  padding: 10px;
+ 
+ 
+}
+
+h2 {
+  padding: 10px 0;
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
 }
