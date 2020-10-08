@@ -75,7 +75,7 @@ $(document).ready(function () {
       "method": "GET",
       "headers": {
         "x-rapidapi-host": "currency26.p.rapidapi.com",
-        "x-rapidapi-key": "a32a78eeadmsh2e228973a5b48fbp189947jsn7abd11e355ff"
+        "x-rapidapi-key": "1b2a3f6796msha49d17ac4e0e047p1b93a7jsnad5f9a5fe19a"
       }
     }
 
