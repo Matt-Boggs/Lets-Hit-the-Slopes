@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 // Pseudo-coding to begin
 
 //2 function,
@@ -28,7 +26,6 @@
 // wind direction
 // wind speed
 // wind gust
->>>>>>> main
 
 $(document).ready(function () {
   var currWeatherPila =
@@ -102,7 +99,7 @@ $(document).ready(function () {
       var final = vl * price
       var finalFixed = final.toFixed(2)
 
-      $("#output").append(finalFixed);
+      $("#output").text(finalFixed);
     });
   })
 });
