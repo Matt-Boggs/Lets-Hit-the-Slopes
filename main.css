@@ -116,3 +116,7 @@ h4 {
   color: black;
   text-align: center;
 }
+
+.container-fluid {
+  margin: auto;
+}
