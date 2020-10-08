@@ -87,10 +87,10 @@ $(document).ready(function () {
       var vl = responseCurr.vl;
 
       if (passtype === "Adult") {
-        price = totInt * 46;
+        price = _.multiply(totInt, 46);
         console.log(price);
       } else if (passtype === "Junior/Senior") {
-        price = totInt * 41;
+        price = _.multiply(totInt, 41);
         console.log(price);
       } else if (passtype === "University") {
         price = _.multiply(totInt, 43);//This is lodash
