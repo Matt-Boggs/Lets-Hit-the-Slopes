@@ -3,14 +3,15 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link
-  rel="stylesheet"
-  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-  crossorigin="anonymous"
-/>
-  <link rel="stylesheet" href="./main.css" />
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="./main.css"/>
+  <title>Home</title>
 </head>
 
 <body>
@@ -34,114 +35,125 @@
       </div>
     </div>
   </nav>
-
-    
+ 
   <h1 class="text-center"><div class="shadow p-3 mb-5 bg-white rounded"> Welcome to Pila Snowland Ski Resort Information Center! </div></h1>
 
-
-</div>
-<div class="row info">
-  <div class="row, col">
-    <h2 class="base-conditions"> Base Conditions </h2>
-    <ul>
-      <li id="snow">Fresh Snow: </li>
-      <li id="wind">Wind Speed: </li>
-      <li id="temp">Temperature: </li>
-      <li id="feels-like">Feels Like: </li>
-      <li id="visibility">Visibility: </li>
-    </ul>
-  </div>
-
-    <div class="col">
-    <h2 class="peak-conditions"> Peak Conditions </h2>
-    <ul>
-      <li id="snow-peak">Fresh Snow: </li>
-      <li id="wind-peak">Wind Speed: </li>
-      <li id="temp-peak">Temperature: </li>
-      <li id="feels-like-peak">Feels Like: </li>
-      <li id="visibility-peak">Visibility: </li>
-    </ul>
-   </div>
-  </div>
-
-
-
-    <div class="col">
-      <form class="conversion">
-        <h2 id="buy-pass"> Buy a Pass: </h2>
-        <p id="money-type"> Please select your currency: </p>
-        <select id="currency">
-          <option id="usd"> USD </option>
-          <option id="cad"> CAD </option>
-          <option id="gpb"> GBP </option>
-          <option id="eur"> EUR </option>
-          <option id="hkd"> HKD </option>
-          <option id="aud"> AUD </option>
-          <option id="jpy"> JPY </option>
-        </select>
-        <p id="stay-length"> Enter the amount of days for your pass: </p>
-        <input type="text" class = "days" placeholder="1, 2, 3, 4, 5, etc">
-        <p id="pass-type"> Please select the pass you would like to purchase: </p>
-        <select id="passes">
-          <option id="adult"> Adult </option>
-          <option id="jr"> Junior/Senior </option>
-          <option id="uni"> University </option>
-          
-        </select> 
-          <br>
-          <br>
-          <button type="button" id="submit"> Submit </button>
-      </form>
-        <form id="text-form">
-          <p> This is how much your pass will cost: </p>
-          <div id="output">  </div>
-        </form>
-      </div>
-  </div>
-</div>
-</div>
-
-
-
-
- <div class = "row">
-<div class="col, container">
-  <div class="row align-items-start">
-    <div class="col">
-   <a href = "Map.html"> <img src="assets/Pila-map.jpg" id="pila"/></a>
-  </div>
+  <div class="row info">
+    <div class="row, col">
+      <h2 class="base-conditions"> Base Conditions </h2>
+      <ul>
+        <li id="snow">Fresh Snow: </li>
+        <li id="wind">Wind Speed: </li>
+        <li id="temp">Temperature: </li>
+        <li id="feels-like">Feels Like: </li>
+        <li id="visibility">Visibility: </li>
+      </ul>
     </div>
-</div>
-</div>
 
-
-
-
-<div class="footer">
-  <div id="inner-footer">
+    <div class="col">
+      <h2 class="peak-conditions"> Peak Conditions </h2>
+      <ul>
+        <li id="snow-peak">Fresh Snow: </li>
+        <li id="wind-peak">Wind Speed: </li>
+        <li id="temp-peak">Temperature: </li>
+        <li id="feels-like-peak">Feels Like: </li>
+        <li id="visibility-peak">Visibility: </li>
+      </ul>
+    </div>
   </div>
+
+
+
+  <div class="col">
+    <form class="conversion">
+      <h2 id="buy-pass"> Buy a Pass: </h2>
+      <p id="money-type"> Please select your currency: </p>
+      <select id="currency">
+        <option id="usd"> USD </option>
+        <option id="cad"> CAD </option>
+        <option id="gpb"> GBP </option>
+        <option id="eur"> EUR </option>
+        <option id="hkd"> HKD </option>
+        <option id="aud"> AUD </option>
+        <option id="jpy"> JPY </option>
+      </select>
+
+      <p id="stay-length"> Enter the amount of days for your pass: </p>
+      <input type="text" class = "days" placeholder="1, 2, 3, 4, 5, etc">
+      <p id="pass-type"> Please select the pass you would like to purchase: </p>
+      <select id="passes">
+        <option id="adult"> Adult </option>
+        <option id="jr"> Junior/Senior </option>
+        <option id="uni"> University </option>
+      </select> 
+
+      <br>
+      <br>
+      <button type="button" id="submit"> Submit </button>
+    </form>
+
+    <form id="text-form">
+      <p> This is how much your pass will cost: </p>
+      <div id="output">  </div>
+    </form>
+  </div>
+
+<<<<<<< HEAD
+<div>
+  <h2 class="intro-h">Pila Snowland Ski Resort</h2>
+  <p class="intro-text">The Pila Snowland Resort is a haven for winter sports enthusiasts. Whether your looking for a winter retreat or just want to hit the slopes, Pila resort has you covered! The  natural beauty of the alps simply cannot be beat, from Mont Blanc to Mont Rosa, the natural beauty of northern Italy will take you breathe away.The team at Pila Snowland is constantly working through any changes in the weather to maintain the pistes (ski runs), so that you can always ski from top to bottom!
+  </p>
+      <ul style="list-style-type:none;">
+          <li class="Pila-list">Check Pila’s current weather conditions</li>
+          <li class="Pila-list">Use the pass calculator above to see how much your trip will cost in your local currency</li>
+          <li class="Pila-list">Visit our map page and check out  what Pila has to offer</li>
+      </ul>
 </div>
+=======
+ 
+
+>>>>>>> main
+
+
+
+  <div class = "row">
+    <div class="col, container">
+      <div class="row align-items-start">
+        <div class="col">
+          <a href = "Map.html"> <img src="assets/Pila-map.jpg" id="pila"/></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="footer">
+    <div id="inner-footer">
+      <img id="animateSki" src="assets/clipart325532 (2).png">
+    </div>
+  </div>
   
   
   <script
-  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-  crossorigin="anonymous"
-></script>
-<script
-  src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-  crossorigin="anonymous"
-></script>
-<script
-  src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-  crossorigin="anonymous"
-></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<!-- Below is what allows us to use lodash. -->
-<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
-<script src="main.js"></script>
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous">
+  </script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous">
+  </script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous">
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- Below is what allows us to use lodash. -->
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
 
