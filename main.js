@@ -34,6 +34,7 @@ $(document).ready(function () {
     url: currWeatherPila,
     method: "GET",
   }).then(function (response) {
+    
     // BASE SNOW STATS
 
     var baseSnow = response.forecast[0].base.freshsnow_in;
@@ -64,6 +65,8 @@ $(document).ready(function () {
   });
 
  
+  // CURRENCY PASS CALCULATOR //
+
   $("#submit").on("click", function () {
 
     var baseCurrency = $("#currency").val()
@@ -79,12 +82,16 @@ $(document).ready(function () {
       }
     }
 
+    // TAKING INFO FROM THE USER INPUTS AND CONVERTING IT TO NUMBERS //
+
     $.ajax(settings).done(function (responseCurr) {
       var totDays = $(".days").val();
       var passtype = $("#passes").val();
       var totInt = parseInt(totDays);
       console.log(passtype);
       var vl = responseCurr.vl;
+
+      // RUNNING THE CALCULATIONS BASED OFF USER INPUT //
 
       if (passtype === "Adult") {
         price = _.multiply(totInt, 46);
