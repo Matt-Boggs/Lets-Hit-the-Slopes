@@ -6,6 +6,8 @@
 
 .col{
   padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .container .col .btn {
@@ -181,6 +183,7 @@ h4 {
 
 h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 1px 1px;
   padding: 10px 0;
   margin: 0;
   margin-bottom: 5px;
@@ -192,12 +195,45 @@ h2 {
   padding-bottom: 20px;
   padding-left: 50px;
 }
+h2.intro-h {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 1px 1px ;
+  padding: 10px 0;
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 34px;
+  font-weight: bold;
+  color: black;
+  text-align: left;
+  text-decoration: underline;
+  padding-bottom: 20px;
+  padding-left: 50px;
+}
 
 
 .ski-list{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
   color: black;
+}
+
+.Pila-list{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: black;
+  padding-left: 20px;
+  padding-right: 35%;
+  text-shadow: 1px 1px;
+}
+
+.intro-text{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  font-size: 20px;
+  padding: 20px;
+  padding-right: 35%;
+  text-shadow: 1px 1px;
+  
 }
 
 .map-text{
