@@ -100,7 +100,7 @@ $(document).ready(function () {
       console.log(final)
       var finalFixed = final.toFixed(2)
 
-      $("#output").text(finalFixed);
+      $("#output").text(finalFixed + " " + baseCurrency);
     });
   })
 });
