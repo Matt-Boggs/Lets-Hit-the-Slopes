@@ -217,6 +217,15 @@ h2.intro-h {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
   color: black;
+  font-weight: bold;
+}
+
+#google-text{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  
 }
 
 .Pila-list{
@@ -241,7 +250,8 @@ h2.intro-h {
 .map-text{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* Fun Zone starts below */
