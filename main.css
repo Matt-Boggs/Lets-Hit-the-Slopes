@@ -153,9 +153,8 @@ h4 {
 }
 
 #google-map {
-  max-width: 95%;
   height: auto;
-  margin-top: 100px;
+  margin-top: 20px;
   padding-left: 10px;
  
 }
@@ -169,10 +168,12 @@ h4 {
   left:0;
   top:0;
   height:100%;
-  max-width:38.5%;
+  max-width:100%;
   position:absolute;
-  padding-left: 10px;
+  padding-left: 20px;
+  margin-right: 20px;
   padding-bottom: 20px;
+  padding-top: 30px;
 }
 
 #runs_image{
@@ -261,4 +262,18 @@ h2.intro-h {
     
     -webkit-transform: scaleX(-1);
   }
+}
+h2.google{
+  padding-bottom: 0px;
+}
+.google-text-area {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  font-size: 16px;
+  height: 100px;
+  width: 600px;
+  display: inline-block;
+  margin-top: 120px;
+  margin-left:10px;
+  
 }
