@@ -87,16 +87,17 @@ $(document).ready(function () {
       var vl = responseCurr.vl;
 
       if (passtype === "Adult") {
-        price = totInt * 46;
+        price = _.multiply(totInt, 46);
         console.log(price);
       } else if (passtype === "Junior/Senior") {
-        price = totInt * 41;
+        price = _.multiply(totInt, 41);
         console.log(price);
       } else if (passtype === "University") {
-        price = totInt * 43;
+        price = _.multiply(totInt, 43);//This is lodash
         console.log(price);
       }
-      var final = vl * price
+      var final = _.multiply(vl, price)//More lodash
+      console.log(final)
       var finalFixed = final.toFixed(2)
 
       $("#output").text(finalFixed);
