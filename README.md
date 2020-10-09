@@ -27,7 +27,7 @@ Github: https://github.com/Matt-Boggs
 Images go here
 
 ## Concept:
-Our goal in developing this app was to be able to check on ski resort conditions at a certain location. Due to API use constraints, this ski resort is in Pila, Italy. The Home page gives you current base and peak conditions at the Pila resort, as well as a tool to convert pass prices to the users chosen currency. As well, there is a thumbnail of the pila ski resort map, that takes you to a seperate map page, with some information about the resort, i.e. run locations, and information on how to use the interactive map, etc.
+Our goal in developing this app was to be able to check on ski resort conditions at a certain location. Due to API use constraints, this ski resort is in Pila, Italy. The Home page gives you current base and peak conditions at the Pila resort, and a tool to convert pass prices to the users chosen currency. As well, there is a thumbnail of the pila ski resort map that takes you to a seperate map page, with some information about the resort, i.e. run locations, and information on how to use the interactive map, etc.
 
 In addition, we have a credits page with some info on the team members that were instrumental to this project's success
 
