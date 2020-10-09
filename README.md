@@ -24,7 +24,11 @@ Github: https://github.com/Matt-Boggs
 
 ## In Use:
 
-Images go here
+![Main Page](https://i.imgur.com/Mk5oZl1.png)
+![Coverter](https://i.imgur.com/CdNcVuj.png)
+![Info](https://i.imgur.com/GbkwFMB.png)
+![Maps](https://i.imgur.com/tbZsQOM.png)
+![Credits](https://i.imgur.com/wXjMk2l.png)
 
 ## Concept:
 Our goal in developing this app was to be able to check on ski resort conditions at a certain location. Due to API use constraints, this ski resort is in Pila, Italy. The Home page gives you current base and peak conditions at the Pila resort, and a tool to convert pass prices to the users chosen currency. As well, there is a thumbnail of the pila ski resort map that takes you to a seperate map page, with some information about the resort, i.e. run locations, and information on how to use the interactive map, etc.
