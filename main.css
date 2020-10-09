@@ -243,12 +243,6 @@ h2.intro-h {
 }
 
 /* Fun Zone starts below */
-
-#animateSki {
-  height: 50px; width: 50px;
-  
-  position: absolute;
-}
 #animateSki {
   height: 50px; width: 50px;
   position: absolute;
@@ -257,7 +251,7 @@ h2.intro-h {
 
   -webkit-animation: linear infinite alternate;
   -webkit-animation-name: run;
-  -webkit-animation-duration: 5s;
+  -webkit-animation-duration: 3s;
 }
 @-webkit-keyframes run {
   0% {
