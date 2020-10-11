@@ -10,12 +10,13 @@
 </head>
 
 <body>
+  <!-- BACKGROUND IMAGE -->
   <style>
     body {
       background-image: url('https://www.powderhounds.com/site/DefaultSite/filesystem/images/Europe/Italy/Pila/overview/07.jpg')
     }
   </style>
-
+  <!-- NAV BAR FROM BOOTSTRAP WITH LINK MODIFICATIONS-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="./index.html">Lets Hit The Slopes</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -32,7 +33,7 @@
   </nav>
  
 
-
+<!-- BEGINNING OF PILA RUNS ROW-->
 <table style="width:100%">
   <tr> 
       <div colspan="2">
@@ -40,6 +41,7 @@
       </div>
   </tr>
   <tr>
+    <!-- PILA RUNS IMAGE -->
       <td colspan="6"> <img id="runs_image" src="assets/pila-runs.png" alt="..." onclick="window.open('assets/pila-runs.png','_blank');"></td> 
       <td colspan="6">
         <div>
@@ -59,11 +61,12 @@
   </tr>
   </table>
   
-  
-    <h2 class="google"> Interactive Google Map of Resort and Ski Area </h2>
+  <!-- BEGINNING OF INTERACTIVE GOOGLE MAPS -->
+  <h2 class="google"> Interactive Google Map of Resort and Ski Area </h2>
   <div class="row">
   <div class= "col-md-5">
   <div class="map-responsive"  id="google-map">
+    <!-- USED IFRAME FOR INTERACTIVE MAP -->
     <iframe
     width="100%"
     height="100%"
@@ -76,22 +79,19 @@
 <div class="google-text-area  col-md-5">
   <p id="google-text"> In this Google Map, you can see the proximity of Pila Snowland to the Summit. To expand, click "view larger map" in the upper left hand corner of the map. You can also switch into a satellite view by clicking the box in the bottom left corner. As you zoom out, you will start to see the mountain and all of the runs just South West of the resort. </p>
   </div>
-
 </div>
 </div>
   <div> 
-  
+  <!-- LINK TO PILA SNOWLAND WEBSITE -->
       <td colspan="12">
         If you're looking for more information about the Pila Ski Resort checkout: <b>https://pila.it/en/</b>
       </td>
   </div>
+  <!-- FOOTER WITH ANIMATION -->
   <div class="footer">
     <div id="inner-footer">
       <img id="animateSki" src="assets/clipart325532 (2).png">
     </div>
   </div>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="map.js"></script>
   </body>
   </html>
